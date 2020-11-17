@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <link href="https://fonts.googleapis.com/css2?family=Bahiana&family=Iceberg&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/styles3.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+     <link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake-slow.min.css">
+
+    <script src="https://kit.fontawesome.com/268d442577.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+
+    <div class="topcontainer">
+      <div id="large-header" class="large-header">
+    <div class="dice">
+        <ol class="die-list even-roll" data-roll="1" id="die-1">
+          <li class="die-item" data-side="1">
+            <span class="dot"></span>
+          </li>
+          <li class="die-item" data-side="2">
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </li>
+          <li class="die-item" data-side="3">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </li>
+          <li class="die-item" data-side="4">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </li>
+          <li class="die-item" data-side="5">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </li>
+          <li class="die-item" data-side="6">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </li>
+        </ol>
+
+        </div>
+
+
+        <div class="content">
+              <canvas id="demo-canvas"></canvas>
+
+             </div>
+
+           </div>
+
+           <div class="sidenav">
+             <a class="navbar-brand" href="dice.html" style="text-decoration:none;"><strong>ROLL</strong><span class="thin"> 𝖍</span><strong> IT</strong></a>
+             <br>
+             <audio id="play" src="sound/rollDice.mp3"></audio>
+             <button class="button" onclick="playSound()" id="Player1"><i class="fas fa-dice-one"></i><strong>&nbsp Player 1</strong></button>
+              <div class="numdiv" id="roll-button"></div>
+            <br>
+
+            <button class="button button-2" onclick="playSound()" id="Player2"> <i class="fas fa-dice-two"></i><strong>&nbsp Player 2</strong></button>
+            <audio id="play" src="sound/rollDice.mp3"></audio>
+            <br>
+            <br>
+            <button class="button" onclick="playSound()" id="Player3"> <i class="fas fa-dice-three"></i><strong>&nbsp Player 3</strong></button>
+            <audio id="play" src="sound/rollDice.mp3"></audio>
+            <br>
+            <br>
+            <button class="button" onclick="playSound()" id="Player4"> <i class="fas fa-dice-four"></i><strong>&nbsp Player 4</strong></button>
+            <audio id="play" src="sound/rollDice.mp3"></audio>
+            <br>
+            <br>
+
+
+            <a href="game11.html" style="text-decoration:none;"><strong>RESTART</strong></a>
+                <a href="#" style="text-decoration:none;"><strong>CONTACT</strong></a>
+                <br>
+                <img id="startOrStopImg" src="images/note3.png" width="70" height ="70" alt="Play Button">
+                <audio autoplay loop id="audio">
+                     <source src="sound/Music.mp3" type="audio/mp3" controls style="display:none">
+                Your browser does not support the audio element.
+                </audio>
+                <br>
+                <br>
+                <a href="index.html"><span class="thin">&nbsp &nbsp &nbsp𝖍</span>ITs</a>
+         </div>
+
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"nonce></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"nonce></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js" nonce></script>
+
+    <script src="index.js" charset="utf-8"></script>
+    <script src="./app2.js"></script>
+
+<!--
+             <div class="sidenav">
+
+               <a href="dice.html"><span class="thin">&nbsp 𝖍</span>ITs</a>
+               <audio id="play" src="sound/rollDice.mp3"></audio>
+               <button class="button" onclick="playSound()" id="roll-button"> Roll Dice</button>
+              <br>
+
+               <a href='#' style="text-decoration:none;"><i class="fas fa-dice-one"></i><strong>&nbsp Player 1</strong></a>
+               <a href='#' style="text-decoration:none;"><i class="fas fa-dice-two"></i><strong>&nbsp Player 2</strong></a>
+               <a href='#' style="text-decoration:none;"><i class="fas fa-dice-three"></i><strong>&nbsp Player 3</strong></a>
+               <a href='#' style="text-decoration:none;"><i class="fas fa-dice-four"></i><strong>&nbsp Player 4</strong></a>
+               <a href='#' style="text-decoration:none;"><i class="fas fa-dice-five"></i><strong>&nbsp Player 5</strong></a>
+               <a href='#' style="text-decoration:none;"><i class="fas fa-dice-six"></i><strong>&nbsp Player 6</strong></a>
+               <a href='#' style="text-decoration:none;"><strong>Something</strong></a>
+               <a href='#' style="text-decoration:none;"><strong>Another</strong></a>
+               <a href='#' style="text-decoration:none;"><strong>SCORE</strong></a>
+
+                <a href="#" style="text-decoration:none;">Contact</a>
+                <br>
+              <br>
+                <a href="dice.html" style="text-decoration:none;"><strong>RESTART</strong></a>
+                <br>
+                <a class="navbar-brand" href="dice.html" style="text-decoration:none;"><strong>ROLL</strong><span class="thin"> 𝖍</span><strong> IT</strong></a>
+
+                  <br>
+
+                  <audio autoplay loop id="audio">
+                       <source src="sound/Music.mp3" type="audio/mp3" controls style="display:none">
+                  Your browser does not support the audio element.
+                  </audio>
+                    <img id="startOrStopImg" src="images/note3.png" width="70" height ="70" alt="Play Button">
+-->
+
+
+
+     </body>
+
+
+   </html>
