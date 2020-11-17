@@ -12,7 +12,7 @@ function testPlay() {
        (container.id== count && dropLog == "total"))
 
 {
- href="https://eg12385.github.io/game9/";
+ href="https://eg12385.github.io/game9.html/";
 }
 
 
