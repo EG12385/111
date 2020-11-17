@@ -1,7 +1,6 @@
 
-function testPlay() {
+  document.getElementById("go").onclickfunction function testPlay() {
 
-  document.getElementById("go").onclickfunction
 
   var users = document.getElementById("users");
   var roll = document.getElementById("roll");
@@ -12,7 +11,7 @@ function testPlay() {
        (container.id== count && dropLog == "total"))
 
 {
- href="https://eg12385.github.io/game9.html/";
+ href="game9.html";
 }
 
 
