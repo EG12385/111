@@ -364,17 +364,17 @@ img {
 
 @media only screen and (max-width: 768px){
   #die-1 {
-    margin-top: 30%;
-    margin-left: 22rem;
+    margin-top: 35%;
+    margin-left: 20rem;
   }
 
   #die-2 {
-    margin-top: 40%;
-    margin-left: 22rem;
+    margin-top: 45%;
+    margin-left: 20rem;
   }
 .sidenav {
     height: 100%;
-    width: 170px;
+    width: 165px;
     position: fixed;
     z-index: 1;
     top: 0;
